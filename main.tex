@@ -1,0 +1,68 @@
+\documentclass{article}
+\input{preambolo.sty}
+\title{Relazione sui rimbalzi di una pallina}
+\author{Aiello Giosuè, Fenili Domenico, Sermi Francesco}
+\date{\today}
+
+\begin{document}
+\maketitle
+\pagebreak
+\tableofcontents
+\pagebreak
+\section{Titolo}
+Determinare la validità del modello teorico scelto per una pallina che cade rimbalzando su una superficie rigida
+\section{Premesse teoriche}
+Nel modello più semplice ipotizzabile per una pallina che cade rimbalzando, possiamo supporre che questa perda una frazione $\gamma$ indipendentemente dalla velocità posseduta prima della caduta. Se lasciamo cadere quindi una pallina da un'altezza nota $h_0$ con velocità iniziale nulla:
+\begin{equation}
+	h_n = h_0 \gamma ^n
+\end{equation}
+dove $n$ rappresenta il numero di rimbalzi. In questo modello è facilmente dimostrabile che l'altezza massima raggiungibile può essere determinata partendo dai tempi di rimbalzo con la seguente formula, sebbene non tenga conto di effetti come la resistenza dell'aria:
+\begin{equation}
+	h_n = \frac{1}{8} g (t_n - t_{n-1})^2
+\end{equation}
+\section{Strumenti e materiali}
+Per effettuare questa esperienza abbiamo utilizzato i seguenti materiali:
+\begin{itemize}
+	\item una pallina da tennis, abbastanza elastica;
+	\item un metro a nastro
+\end{itemize}
+Per quanto riguarda gli strumenti abbiamo invece utilizzato:
+\begin{itemize}
+	\item \textbf{Audacity}, software per l'elaborazione dei file audio;
+	\item uno smartphone, per registrare dei file audio;
+\end{itemize}
+\section{Considerazione sulle misure}
+Le misure sono state effettuate facendo una serie di registrazioni di prova per verificare quale fosse l'altezza ottimale per effettuare il maggior numero di misurazioni: infatti, a seconda del materiale con cui sono fatte le palline, queste perderanno una frazione di energia cinetica maggiore, pertanto abbiamo fatto una serie di prove per comprendere quale fosse l'altezza migliore per registrare il maggior numero di rimbalzi. \\
+-- aggiungere considerazioni su $h_0$ -- 
+\begin{wraptable}{l}{0.5\textwidth}
+	\centering
+	\begin{tabular}{c  c}
+		\toprule
+		\multirow[c]{2}{*}{Tempo (s)} & \multirow[c]{2}{*}{Altezze (m)} \\ \\
+		\toprule
+		
+	\end{tabular}
+\end{wraptable}
+
+\noindent Per la propagazione dell'errore sulle $h_n$, possiamo assumere tranquillamente che la misura delle altezze, la misura dei tempi $t_n$ e $t_{n-1}$ siano tutte delle grandezze indipendenti statisticamente e quindi possiamo considerare la seguente formula per calcolare le incertezze:
+\begin{equation}
+	\sigma_y = \sqrt{\left(\frac{\partial{h_n}}{\partial{t_n}}\right)^2 \sigma_{t_n}^2 + \left(\frac{\partial{h_n}}{\partial{t_{n-1}}}\right)^2 \sigma_{t_{n-1}}^2} = \sqrt{[\frac{1}{8} * 2 * g * (t_n - t_{n-1}) * \frac{1}{\frac{1}{8}g(t_n - t_{n-1})^2}}
+\end{equation}
+ora 
+\section{Analisi dei dati}
+
+Per questa analisi abbiamo utilizzato il metodo del parametro libero del fit rispetto al valore $h_0$. Abbiamo realizzato con il linguaggio di programmazione Python e la funzione \emph{curve\_fit} della libreria \emph{scipy} un grafico delle altezze $h_n$ in funzione dell'indice $n$ che rappresenta l'$n$-esimo rimbalzo della pallina. \\
+Siccome il modello teorico che avevamo ipotizzato era della forma:
+$$
+	h_n = h_0 \gamma^n
+$$
+dovrebbe risultare che i nostri dati si dispongono come un esponenziale e quindi dovrebbero apparire come una retta in scala semilogaritmica. Inoltre,  tenendo $h_0$ come parametro libero, possiamo confrontare il valore stimato dal fit con quello reale per valutare di quanto si discosta dalla realtà il modello teorico. \\
+Per quanto riguarda la determinazione degli errori, abbiamo considerato 	
+
+\section{Appendice}
+\subsection{Codice Python utilizzato}
+Per la realizzazione di questa esperienza, abbiamo utilizzato il seguente codice \emph{Python}
+\begin{lstlisting}[language=Python]
+
+\end{lstlisting}
+\end{document}
