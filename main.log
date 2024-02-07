@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.2.14)  4 FEB 2024 23:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.2.14)  7 FEB 2024 01:13
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1464,27 +1464,55 @@ LaTeX Font Info:    Trying to load font information for U+npxsyc on input line
 File: unpxsyc.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxsyc.
 ) [1
 
-{c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./main.toc)
+{c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./main.toc
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
+(Font)              size <5> substituted on input line 9.
+
+)
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [2]
+ [2] (c:/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 3
+9.
 
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 15.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 35--45
-\T1/cmr/m/n/10 -- ag-giun-ge-re con-si-de-ra-zio-ni su $\OML/npxmi/m/it/10 h[]$
- \T1/cmr/m/n/10 --
+(c:/texlive/2021/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+Underfull \hbox (badness 1769) in paragraph at lines 54--55
+\T1/cmr/m/n/10 ver-ti-re il fi-le in un for-ma-to in gra-do di es-se-re
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--60
+Underfull \hbox (badness 1122) in paragraph at lines 54--55
+\T1/cmr/m/n/10 let-to dal-la li-bre-ria. Il co-di-ce usa-to per rap-pre-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
 
  []
 
-[3] [4] (./main.aux)
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
+
+ []
+
+[3]
+<Grafico_rimbalzo.pdf, id=65, 462.52798pt x 346.89601pt>
+File: Grafico_rimbalzo.pdf Graphic file (type pdf)
+<use Grafico_rimbalzo.pdf>
+Package pdftex.def Info: Grafico_rimbalzo.pdf  used on input line 59.
+(pdftex.def)             Requested size: 115.6317pt x 86.72379pt.
+ [4pdfTeX warning (ext4): destination with the same identifier (name{figure.1})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.82 \end{document}
+                    <./Grafico_rimbalzo.pdf>] (./main.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
@@ -1494,31 +1522,32 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 51109 strings out of 478278
- 1133731 string characters out of 5850546
- 2034437 words of memory out of 5000000
- 68687 multiletter control sequences out of 15000+600000
- 501602 words of font info for 111 fonts, out of 8000000 for 9000
+ 51607 strings out of 478278
+ 1138900 string characters out of 5850546
+ 2102707 words of memory out of 5000000
+ 69163 multiletter control sequences out of 15000+600000
+ 502312 words of font info for 109 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 89i,10n,83p,737b,1344s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 89i,6n,83p,1260b,1429s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texl
 ive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2021/
 texmf-dist/fonts/type1/public/newpx/NewPXMI.pfb><c:/texlive/2021/texmf-dist/fon
 ts/type1/public/newpx/NewPXMI_gnu.pfb><c:/texlive/2021/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmr10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmr5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/newpx/pxmiaX.pfb><c:/texli
-ve/2021/texmf-dist/fonts/type1/public/newpx/pxsys.pfb><c:/texlive/2021/texmf-di
-st/fonts/type1/public/cm-super/sfbx1000.pfb><c:/texlive/2021/texmf-dist/fonts/t
-ype1/public/cm-super/sfbx1440.pfb><c:/texlive/2021/texmf-dist/fonts/type1/publi
-c/cm-super/sfrm1000.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super
-/sfrm1200.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1728.
-pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb><c:/te
-xlive/2021/texmf-dist/fonts/type1/public/newtx/txexs.pfb>
-Output written on main.pdf (4 pages, 158875 bytes).
+onts/cm/cmr7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/newpx/pxmiaX.pf
+b><c:/texlive/2021/texmf-dist/fonts/type1/public/newpx/pxsys.pfb><c:/texlive/20
+21/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><c:/texlive/2021/texmf-d
+ist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2021/texmf-dist/fonts/
+type1/public/cm-super/sfbx1440.pfb><c:/texlive/2021/texmf-dist/fonts/type1/publ
+ic/cm-super/sfrm0500.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-supe
+r/sfrm1000.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1200
+.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb><c:/t
+exlive/2021/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb><c:/texlive/202
+1/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb>
+Output written on main.pdf (4 pages, 288560 bytes).
 PDF statistics:
- 136 PDF objects out of 1000 (max. 8388607)
- 100 compressed objects within 1 object stream
- 14 named destinations out of 1000 (max. 500000)
- 53 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 192 PDF objects out of 1000 (max. 8388607)
+ 135 compressed objects within 2 object streams
+ 30 named destinations out of 1000 (max. 500000)
+ 74 words of extra memory for PDF output out of 10000 (max. 10000000)
 

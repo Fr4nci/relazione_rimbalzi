@@ -3,5 +3,7 @@
 \contentsline {section}{\numberline {1}Titolo}{3}{section.1}%
 \contentsline {section}{\numberline {2}Premesse teoriche}{3}{section.2}%
 \contentsline {section}{\numberline {3}Strumenti e materiali}{3}{section.3}%
-\contentsline {section}{\numberline {4}Considerazione sulle misure}{3}{section.4}%
-\contentsline {section}{\numberline {5}Analisi dei dati}{3}{section.5}%
+\contentsline {section}{\numberline {4}Descrizione sulle misure}{3}{section.4}%
+\contentsline {section}{\numberline {5}Analisi dei dati}{4}{section.5}%
+\contentsline {section}{\numberline {6}Appendice}{4}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Codice Python utilizzato}{4}{subsection.6.1}%

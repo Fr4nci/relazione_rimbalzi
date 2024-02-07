@@ -31,24 +31,39 @@ Per quanto riguarda gli strumenti abbiamo invece utilizzato:
 	\item \textbf{Audacity}, software per l'elaborazione dei file audio;
 	\item uno smartphone, per registrare dei file audio;
 \end{itemize}
-\section{Considerazione sulle misure}
-Le misure sono state effettuate facendo una serie di registrazioni di prova per verificare quale fosse l'altezza ottimale per effettuare il maggior numero di misurazioni: infatti, a seconda del materiale con cui sono fatte le palline, queste perderanno una frazione di energia cinetica maggiore, pertanto abbiamo fatto una serie di prove per comprendere quale fosse l'altezza migliore per registrare il maggior numero di rimbalzi. \\
--- aggiungere considerazioni su $h_0$ -- 
-\begin{wraptable}{l}{0.5\textwidth}
-	\centering
-	\begin{tabular}{c  c}
-		\toprule
-		\multirow[c]{2}{*}{Tempo (s)} & \multirow[c]{2}{*}{Altezze (m)} \\ \\
-		\toprule
-		
-	\end{tabular}
-\end{wraptable}
+\section{Descrizione sulle misure}
+Prima di procedere con le misure sono state effettuate facendo una serie di registrazioni di prova per verificare quale fosse l'altezza ottimale per effettuare il maggior numero di misurazioni. \\ La pallina, in base al materiale di cui è fatta, perderà una maggiore o una minore frazione di energia cinetica ad ogni urto, urtando più o meno volte contro il pavimento, pertanto dovevamo individuare l'altezza $h_0$ da cui era possibile ottenere un buon numero di urti. Oltre a ciò queste prove si sono rivelate utili per individuare la posizione dello smartphone migliore per misurare in maniera più efficace la pressione sonora esercitata dagli urti della pallina contro il pavimento (un accorgimento che si rivelerà molto utile nel momento in cui verranno fatte le analisi sul campione audio registrato). \\ \textbf{Considerazioni}: nel nostro setup sperimentale, fino ad ora le uniche fonti di errori possono derivare dalla possibilità pallina urti contro altri oggetti presenti nelle vicinanze e siano presenti dei rumori che possono invalidare la registrazione audio effettuata con lo smartphone. Per ovviare a questo problema abbiamo deciso di lavorare in un ambiente spazioso e il più silenzioso possibile. 
 
-\noindent Per la propagazione dell'errore sulle $h_n$, possiamo assumere tranquillamente che la misura delle altezze, la misura dei tempi $t_n$ e $t_{n-1}$ siano tutte delle grandezze indipendenti statisticamente e quindi possiamo considerare la seguente formula per calcolare le incertezze:
-\begin{equation}
-	\sigma_y = \sqrt{\left(\frac{\partial{h_n}}{\partial{t_n}}\right)^2 \sigma_{t_n}^2 + \left(\frac{\partial{h_n}}{\partial{t_{n-1}}}\right)^2 \sigma_{t_{n-1}}^2} = \sqrt{[\frac{1}{8} * 2 * g * (t_n - t_{n-1}) * \frac{1}{\frac{1}{8}g(t_n - t_{n-1})^2}}
-\end{equation}
-ora 
+\begin{wrapfigure}{l}{0.5\textwidth}
+	\vspace{-0.5cm}
+	\begin{lstlisting}[language=Python]
+	import wave
+	import numpy as np
+	from matplotlib import pyplot as plt
+	stream = wave.open("./Audio.wav")
+	signal = np.frombuffer(stream.readframes(stream.getnframes()), dtype=np.int16)
+	t = np.arange(len(signal)) / stream.getframerate()
+	plt.figure("Rimbalzi pallina")
+	plt.plot(t, signal)
+	plt.xlabel("Tempo [s]")
+	plt.savefig("Grafico_rimbalzo.pdf")
+	plt.show()
+	\end{lstlisting}
+\end{wrapfigure}
+
+\noindent \\ Successivamente abbiamo effettuato le misure. Dopo aver raccolto il campione audio, siamo passati ad analizzarlo con la libreria \emph{matplotlib}. Non disponendo di un'applicazione per la registrazione dei suoni in grado di registrare in formato \emph{.wave} abbiamo utilizzato il software \textbf{Audacity} per convertire il file in un formato in grado di essere letto dalla libreria. Il codice usato per rappresentare il campione audio è riportato qua di lato. \\ \\
+\newpage
+
+\begin{wrapfigure}{r}{0.5\textwidth}
+	\centering
+	\includegraphics[width=0.4\textwidth, scale=0.25]{Grafico_rimbalzo.pdf}
+	\caption{Immagine audio del campione audio misurato dal telefono: ogni rimbalzo della pallina è caratterizzato da un attacco più lungo ed una coda relativamente più lunga e già si intuisce il problema di individuare l'intervallo in cui è avvenuto l'urto}
+	\label{fig:audio}
+\end{wrapfigure}
+
+La determinazione degli istanti in cui è avvenuto il rimbalzo è la fase più delicata della raccolta dati di questa esperienza e quello più soggetta agli errori accidentali e sistematici. Come si può vedere dalla \ref{fig:audio} qua di lato, infatti, non è possibile individuare in maniera precisa l'\emph{esatto} istante temporale in cui è avvenuto il rimbalzo a causa della natura impulsiva delle forze che hanno agito sulla pallina. \\
+Siccome ogni rimbalzo è caratterizzato da un picco, abbiamo considerato l'istante del rimbalzo come il valore medio dell'intervallo di tempo che va dall'istante in cui la pressione sonora è massima all'istante di tempo successivo con un nuovo picco massimo relativo.
+
 \section{Analisi dei dati}
 
 Per questa analisi abbiamo utilizzato il metodo del parametro libero del fit rispetto al valore $h_0$. Abbiamo realizzato con il linguaggio di programmazione Python e la funzione \emph{curve\_fit} della libreria \emph{scipy} un grafico delle altezze $h_n$ in funzione dell'indice $n$ che rappresenta l'$n$-esimo rimbalzo della pallina. \\
