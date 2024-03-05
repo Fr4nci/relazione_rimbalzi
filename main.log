@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.2.14)  4 MAR 2024 23:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.2.14)  5 MAR 2024 16:42
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1496,202 +1496,108 @@ File: unpxsyc.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxsyc.
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
 (Font)              size <5> substituted on input line 15.
 
+<Grafico_rimbalzo.pdf, id=34, 462.52798pt x 346.89601pt>
+File: Grafico_rimbalzo.pdf Graphic file (type pdf)
+<use Grafico_rimbalzo.pdf>
+Package pdftex.def Info: Grafico_rimbalzo.pdf  used on input line 40.
+(pdftex.def)             Requested size: 46.2555pt x 34.69162pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--38
+Underfull \hbox (badness 10000) in paragraph at lines 35--43
+\T1/cmr/m/n/10 pos-si-bi-le.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
 
  []
 
-(c:/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-)
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
+
+ []
+
+[3 <./Grafico_rimbalzo.pdf>]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 4
-3.
+7.
 
 (c:/texlive/2021/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-Underfull \hbox (badness 1769) in paragraph at lines 58--59
-\T1/cmr/m/n/10 ver-ti-re il fi-le in un for-ma-to in gra-do di es-se-re
- []
-
-
-Underfull \hbox (badness 1122) in paragraph at lines 58--59
-\T1/cmr/m/n/10 let-to dal-la li-bre-ria. Il co-di-ce usa-to per rap-pre-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 58--59
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 58--59
-
- []
-
-[3]
-<Grafico_rimbalzo.pdf, id=64, 462.52798pt x 346.89601pt>
-File: Grafico_rimbalzo.pdf Graphic file (type pdf)
-<use Grafico_rimbalzo.pdf>
-Package pdftex.def Info: Grafico_rimbalzo.pdf  used on input line 63.
-(pdftex.def)             Requested size: 115.6317pt x 86.72379pt.
-<Esempio_misurazione.png, id=66, 483.0045pt x 410.7345pt>
+<Esempio_misurazione.png, id=73, 483.0045pt x 410.7345pt>
 File: Esempio_misurazione.png Graphic file (type png)
 <use Esempio_misurazione.png>
-Package pdftex.def Info: Esempio_misurazione.png  used on input line 74.
+Package pdftex.def Info: Esempio_misurazione.png  used on input line 51.
 (pdftex.def)             Requested size: 193.19836pt x 164.29088pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 75.
+(caption)                particular \caption on input line 52.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 96.
+(caption)                particular \caption on input line 74.
 See the caption package documentation for explanation.
 
 
-Underfull \hbox (badness 3612) in paragraph at lines 68--99
-[]\T1/cmr/m/n/10 La de-ter-mi-na-zio-ne de-gli istan-ti in cui è av-ve-
- []
-
-
-Underfull \hbox (badness 6542) in paragraph at lines 68--99
-\T1/cmr/m/n/10 nu-to il rim-bal-zo è la fa-se più de-li-ca-ta del-
- []
-
-
-Underfull \hbox (badness 6078) in paragraph at lines 68--99
-\T1/cmr/m/n/10 la rac-col-ta da-ti di que-sta espe-rien-za e quel-
- []
-
-
-Underfull \hbox (badness 1466) in paragraph at lines 68--99
-\T1/cmr/m/n/10 lo più sog-get-ta agli er-ro-ri ac-ci-den-ta-li e si-ste-ma-
- []
-
-
-Underfull \hbox (badness 3343) in paragraph at lines 68--99
-\T1/cmr/m/n/10 ti-ci: co-me si può ve-de-re dal-la [][]1[][] qua di la-
- []
-
-
-Underfull \hbox (badness 3088) in paragraph at lines 68--99
-\T1/cmr/m/n/10 to, in-fat-ti, non è pos-si-bi-le in-di-vi-dua-re in ma-
- []
-
-
-Underfull \hbox (badness 1783) in paragraph at lines 68--99
-\T1/cmr/m/n/10 nie-ra pre-ci-sa l'\T1/cmr/m/it/10 esatto \T1/cmr/m/n/10 istan-t
-e tem-po-ra-le in cui è
- []
-
-
-Underfull \hbox (badness 3271) in paragraph at lines 68--99
-\T1/cmr/m/n/10 av-ve-nu-to il rim-bal-zo a cau-sa del-la na-tu-ra im-
- []
-
-
-Underfull \hbox (badness 3049) in paragraph at lines 68--99
-\T1/cmr/m/n/10 pul-si-va del-le for-ze che han-no agi-to sul-la pal-li-
- []
-
-
-Underfull \hbox (badness 3838) in paragraph at lines 68--99
-\T1/cmr/m/n/10 Siccome ogni rim-bal-zo è ca-rat-te-riz-za-to da una
- []
-
-
-Underfull \hbox (badness 3291) in paragraph at lines 68--99
-\T1/cmr/m/n/10 se-rie di \T1/cmr/m/it/10 pic-chi \T1/cmr/m/n/10 (fra cui è pre-
-sen-te uno che è
- []
-
-
-Underfull \hbox (badness 4205) in paragraph at lines 68--99
-\T1/cmr/m/n/10 mas-si-mo) e una \T1/cmr/m/it/10 co-da \T1/cmr/m/n/10 ab-bia-mo 
-con-si-de-ra-to co-
- []
-
-
-Underfull \hbox (badness 6316) in paragraph at lines 68--99
-\T1/cmr/m/n/10 me istan-te del rim-bal-zo il va-lo-re me-dio del-
- []
-
-
-Underfull \hbox (badness 3281) in paragraph at lines 68--99
-\T1/cmr/m/n/10 l'in-ter-val-lo di tem-po che va dal-l'i-stan-te in cui
- []
-
-
-Underfull \hbox (badness 7012) in paragraph at lines 68--99
-\T1/cmr/m/n/10 la pres-sio-ne so-no-ra è mas-si-ma (ov-ve-ro quan-
- []
-
-
-Underfull \hbox (badness 5460) in paragraph at lines 68--99
-\T1/cmr/m/n/10 do le for-ze im-pul-si-ve so-no mas-si-me) al-l'i-stan-
- []
-
-
-Underfull \hbox (badness 3138) in paragraph at lines 68--99
-\T1/cmr/m/n/10 te di tem-po in cui è pre-sen-te un nuo-vo pic-
- []
-
-
-Underfull \hbox (badness 4913) in paragraph at lines 68--99
-\T1/cmr/m/n/10 co e co-me in-cer-tez-za la se-mi-di-sper-sio-ne fra i
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 68--99
+Underfull \hbox (badness 10000) in paragraph at lines 45--76
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 68--99
+Underfull \hbox (badness 10000) in paragraph at lines 45--76
 
  []
 
 
-Overfull \hbox (9.355pt too wide) in paragraph at lines 68--99
-[]$   $[]$
+Overfull \hbox (9.355pt too wide) in paragraph at lines 45--76
+[]$   $[]$ 
  []
 
+[4
 
-Underfull \hbox (badness 10000) in paragraph at lines 68--99
-
- []
-
-[4 <./Grafico_rimbalzo.pdf> <./Esempio_misurazione.png>]
-<Grafico_n-h(t).pdf, id=99, 462.52798pt x 346.89601pt>
+ <./Esempio_misurazione.png>]
+<Grafico_n-h(t).pdf, id=83, 462.52798pt x 346.89601pt>
 File: Grafico_n-h(t).pdf Graphic file (type pdf)
 <use Grafico_n-h(t).pdf>
-Package pdftex.def Info: Grafico_n-h(t).pdf  used on input line 118.
-(pdftex.def)             Requested size: 231.26341pt x 173.44757pt.
-<Grafico_residui.pdf, id=100, 462.52798pt x 346.89601pt>
+Package pdftex.def Info: Grafico_n-h(t).pdf  used on input line 95.
+(pdftex.def)             Requested size: 185.0079pt x 138.75594pt.
+<Grafico_residui.pdf, id=84, 462.52798pt x 346.89601pt>
 File: Grafico_residui.pdf Graphic file (type pdf)
 <use Grafico_residui.pdf>
-Package pdftex.def Info: Grafico_residui.pdf  used on input line 119.
-(pdftex.def)             Requested size: 231.26341pt x 173.44757pt.
+Package pdftex.def Info: Grafico_residui.pdf  used on input line 96.
+(pdftex.def)             Requested size: 185.0079pt x 138.75594pt.
 
 
 LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 126.
+(Font)              size <5> substituted on input line 103.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--112
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--112
+
+ []
 
 [5 <./Grafico_n-h(t).pdf> <./Grafico_residui.pdf>]
-<Grafico_n-h(t)_(1).pdf, id=171, 462.52798pt x 346.89601pt>
+Underfull \hbox (badness 10000) in paragraph at lines 130--132
+
+ []
+
+<Grafico_n-h(t)_(1).pdf, id=158, 462.52798pt x 346.89601pt>
 File: Grafico_n-h(t)_(1).pdf Graphic file (type pdf)
 <use Grafico_n-h(t)_(1).pdf>
-Package pdftex.def Info: Grafico_n-h(t)_(1).pdf  used on input line 163.
+Package pdftex.def Info: Grafico_n-h(t)_(1).pdf  used on input line 139.
 (pdftex.def)             Requested size: 231.26341pt x 173.44757pt.
-<Grafico_residui_(1).pdf, id=172, 462.52798pt x 346.89601pt>
+<Grafico_residui_(1).pdf, id=159, 462.52798pt x 346.89601pt>
 File: Grafico_residui_(1).pdf Graphic file (type pdf)
 <use Grafico_residui_(1).pdf>
-Package pdftex.def Info: Grafico_residui_(1).pdf  used on input line 164.
+Package pdftex.def Info: Grafico_residui_(1).pdf  used on input line 140.
 (pdftex.def)             Requested size: 231.26341pt x 173.44757pt.
- [6 <./Grafico_n-h(t)_(1).pdf> <./Grafico_residui_(1).pdf>] [7] (./main.aux)
+[6 <./Grafico_n-h(t)_(1).pdf> <./Grafico_residui_(1).pdf>] [7] (./main.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.97499pt have occurred.
@@ -1701,13 +1607,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 52914 strings out of 478278
- 1165036 string characters out of 5850546
- 2119966 words of memory out of 5000000
- 70436 multiletter control sequences out of 15000+600000
- 518761 words of font info for 154 fonts, out of 8000000 for 9000
+ 52474 strings out of 478278
+ 1161071 string characters out of 5850546
+ 2055966 words of memory out of 5000000
+ 70011 multiletter control sequences out of 15000+600000
+ 526613 words of font info for 174 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 89i,10n,83p,1202b,1454s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 89i,10n,83p,1453b,1344s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texl
 ive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2021/
 texmf-dist/fonts/type1/public/newpx/NewPXMI.pfb><c:/texlive/2021/texmf-dist/fon
@@ -1718,17 +1624,18 @@ onts/cm/cmr5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
 ve/2021/texmf-dist/fonts/type1/public/newpx/pxsys.pfb><c:/texlive/2021/texmf-di
 st/fonts/type1/public/cm-super/sfbx1000.pfb><c:/texlive/2021/texmf-dist/fonts/t
 ype1/public/cm-super/sfbx1440.pfb><c:/texlive/2021/texmf-dist/fonts/type1/publi
-c/cm-super/sfrm0500.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super
-/sfrm1000.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1200.
-pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb><c:/te
-xlive/2021/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb><c:/texlive/2021
-/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb><c:/texlive/2021/texmf-dis
-t/fonts/type1/public/cm-super/sftt1000.pfb><c:/texlive/2021/texmf-dist/fonts/ty
-pe1/public/newtx/txexs.pfb>
-Output written on main.pdf (7 pages, 397987 bytes).
+c/cm-super/sfrm0600.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super
+/sfrm0700.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0800.
+pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/te
+xlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2021
+/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb><c:/texlive/2021/texmf-dis
+t/fonts/type1/public/cm-super/sfti1000.pfb><c:/texlive/2021/texmf-dist/fonts/ty
+pe1/public/cm-super/sftt1000.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public
+/newtx/txexs.pfb>
+Output written on main.pdf (7 pages, 381557 bytes).
 PDF statistics:
- 349 PDF objects out of 1000 (max. 8388607)
- 189 compressed objects within 2 object streams
- 41 named destinations out of 1000 (max. 500000)
+ 337 PDF objects out of 1000 (max. 8388607)
+ 176 compressed objects within 2 object streams
+ 28 named destinations out of 1000 (max. 500000)
  91 words of extra memory for PDF output out of 10000 (max. 10000000)
 

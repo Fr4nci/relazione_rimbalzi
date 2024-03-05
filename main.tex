@@ -9,7 +9,7 @@
 \pagebreak
 \tableofcontents
 \pagebreak
-\section{Titolo}
+\section{Scopo dell'esperienza}
 Determinare la validità del modello teorico scelto per una pallina che cade rimbalzando su una superficie rigida
 \section{Premesse teoriche}
 Nel modello più semplice ipotizzabile per una pallina che cade rimbalzando, possiamo supporre che questa perda una frazione $\gamma$ indipendentemente dalla velocità posseduta prima della caduta. Se lasciamo cadere quindi una pallina da un'altezza nota $h_0$ con velocità iniziale nulla:
@@ -32,40 +32,17 @@ Per quanto riguarda gli strumenti abbiamo invece utilizzato:
 	\item uno smartphone, per registrare dei file audio;
 \end{itemize}
 \section{Descrizione sulle misure}
-%Prima di procedere con le misure sono state effettuate una serie di registrazioni di prova per verificare quale fosse l'altezza ottimale per l'esperimento. \\ La pallina, in base al materiale di cui è fatta, perderà una maggiore o una minore frazione di energia cinetica ad ogni urto, rimbalzando più o meno volte contro il pavimento, pertanto dovevamo individuare l'altezza $h_0$ da cui era possibile registrare un buon numero di urti. Oltre a ciò queste prove si sono rivelate utili per individuare la posizione dello smartphone migliore per misurare in maniera più efficace la pressione sonora esercitata dagli urti della pallina contro il pavimento (un accorgimento che si rivelerà molto utile nel momento in cui verranno fatte le analisi sul campione audio registrato). \\ \textbf{Considerazioni}: nel nostro setup sperimentale, fino ad ora le uniche fonti di errori possono derivare dalla possibilità pallina urti contro altri oggetti presenti nelle vicinanze e siano presenti dei rumori che possono invalidare la registrazione audio effettuata con lo smartphone. Per ovviare a questo problema abbiamo deciso di lavorare in un ambiente spazioso e il più silenzioso possibile. 
-
-Prima di iniziare l'esperimento, abbiamo effettuato una serie di test per determinare l'altezza ottimale $h_0$ da cui far cadere la pallina. Questo perché, a seconda del materiale con cui è fatta, la pallina perde una quantità diversa di energia cinetica ad ogni urto, influenzando il numero di rimbalzi che possiamo registrare. Questi test preliminari ci hanno anche aiutato a trovare la posizione migliore per posizionare lo smartphone per rilevare efficacemente la pressione sonora generata dagli urti della pallina sul pavimento. Questo sarà particolarmente utile durante l'analisi dell'audio registrato.\\
-
+Prima di iniziare l'esperimento, abbiamo effettuato una serie di test per determinare l'altezza ottimale $h_0$ da cui far cadere la pallina. Questo perché, a seconda del materiale con cui è fatta, la pallina perde una quantità diversa di energia cinetica ad ogni urto, influenzando il numero di rimbalzi che possiamo registrare. Questi test preliminari ci hanno anche aiutato a trovare la posizione migliore per posizionare lo smartphone per rilevare efficacemente la pressione sonora generata dagli urti della pallina sul pavimento. Questo sarà particolarmente utile durante l'analisi dell'audio registrato. \\
 \textbf{Considerazioni}: nel nostro setup sperimentale, le potenziali fonti di errore possono derivare da urti accidentali della pallina con oggetti nelle vicinanze o da rumori di fondo che potrebbero compromettere la registrazione audio. Per mitigare questi problemi, abbiamo scelto di condurre l'esperimento in un ambiente spazioso e il più silenzioso possibile.
-
-\begin{wrapfigure}{l}{0.5\textwidth}
-	\vspace{-0.5cm}
-	\begin{lstlisting}[language=Python]
-	import wave
-	import numpy as np
-	from matplotlib import pyplot as plt
-	stream = wave.open("./Audio.wav")
-	signal = np.frombuffer(stream.readframes(stream.getnframes()), dtype=np.int16)
-	t = np.arange(len(signal)) / stream.getframerate()
-	plt.figure("Rimbalzi pallina")
-	plt.plot(t, signal)
-	plt.xlabel("Tempo [s]")
-	plt.savefig("Grafico_rimbalzo.pdf")
-	plt.show()
-	\end{lstlisting}
-\end{wrapfigure}
-
-\noindent \\ Successivamente abbiamo effettuato le misure. Dopo aver raccolto il campione audio, siamo passati ad analizzarlo con la libreria \emph{matplotlib}. Non disponendo di un'applicazione per la registrazione dei suoni in grado di registrare in formato \emph{.wave} abbiamo utilizzato il software \textbf{Audacity} per convertire il file in un formato in grado di essere letto dalla libreria. Il codice usato per rappresentare il campione audio è riportato qua di lato. \\ \\
-\newpage
-
-\begin{wrapfigure}{r}{0.5\textwidth}
+\begin{wrapfigure}{l}{0.6\textwidth}
+	\vspace{-1cm}
 	\centering
-	\includegraphics[width=0.4\textwidth, scale=0.25]{Grafico_rimbalzo.pdf}
+	\includegraphics[width=0.3\textwidth, scale=0.1]{Grafico_rimbalzo.pdf}
 	\caption{Immagine audio del campione audio misurato dal telefono: ogni rimbalzo della pallina è caratterizzato da un attacco più lungo ed una coda relativamente più lunga e già si intuisce il problema di individuare l'intervallo in cui è avvenuto l'urto}
 	\label{fig:audio}
 \end{wrapfigure}
-
-\noindent La determinazione degli istanti in cui è avvenuto il rimbalzo è la fase più delicata della raccolta dati di questa esperienza e quello più soggetta agli errori accidentali e sistematici: come si può vedere dalla \ref{fig:audio} qua di lato, infatti, non è possibile individuare in maniera precisa l'\emph{esatto} istante temporale in cui è avvenuto il rimbalzo a causa della natura impulsiva delle forze che hanno agito sulla pallina. \\
+\noindent Successivamente abbiamo effettuato le misure. Dopo aver raccolto il campione audio, siamo passati ad analizzarlo con la libreria \emph{matplotlib}. Non disponendo di un'applicazione per la registrazione dei suoni in grado di registrare in formato \emph{.wave} abbiamo utilizzato il software \textbf{Audacity} per convertire il file in un formato in grado di essere letto dalla libreria. \\ \\ \clearpage
+\noindent La determinazione degli istanti in cui è avvenuto il rimbalzo è la fase più delicata della raccolta dati di questa esperienza e quello più soggetta agli errori accidentali e sistematici: come si può vedere dalla \ref{fig:audio} qua di lato, infatti, non è possibile individuare in maniera precisa l'\emph{esatto} istante temporale in cui è avvenuto il rimbalzo a causa della natura impulsiva delle forze che hanno agito sulla pallina.
 Siccome ogni rimbalzo è caratterizzato da una serie di \emph{picchi} (fra cui è presente uno che è massimo) e una \emph{coda} abbiamo considerato come istante del rimbalzo il valore medio dell'intervallo di tempo che va dall'istante in cui la pressione sonora è massima (ovvero quando le forze impulsive sono massime) all'istante di tempo  in cui è presente un nuovo picco e come incertezza la semidispersione fra i due. \\ \\
 Per fare ciò abbiamo utilizzato lo strumento \emph{Lente} presente sui grafici del file audio creati con la libreria \texttt{matplotlib}: si ingrandiva la coda dell'urto fino a posizionarci sui due picchi (quello massimo e quello successivo) col mouse e si leggeva la coordinata $x$ (ovvero il tempo) dei due riportata in alto a destra.
 \noindent Successivamente, questi dati sono stati immagazzinati in un array di Python da cui poi abbiamo effettuate tutte le estrapolazioni descritte sopra. Si riporta qua sotto in tabella i dati ottenuti: \\ \\
@@ -79,7 +56,7 @@ Per fare ciò abbiamo utilizzato lo strumento \emph{Lente} presente sui grafici 
 	\centering
 	\begin{tabular}{ c c }
 		\toprule
-		$\Delta t$ ($s$) & $\sigma_{\Delta t}$ ($s$) \\ 
+		$t^*$ ($s$) & $\sigma_{t^*}$ ($s$) \\ 
 		\toprule
 		$0.2540$ & $0.0003$ \\ \midrule
 		$1.340$ & $0.002$ \\ \midrule
@@ -93,12 +70,12 @@ Per fare ciò abbiamo utilizzato lo strumento \emph{Lente} presente sui grafici 
 		$5.017$ & $0.004$ \\ \bottomrule
 
 	\end{tabular}
-	\captionof{table}{Tabella dei tempi da noi misurati: abbiamo considerato il valore medio fra il picco massimo e il picco successivo come istante di tempo in cui è avvenuto il rimbalzo e come incertezza la semidispersione fra i due a causa del fatto che non è possibile determinare a priori l'istante preciso in cui è avvenuto l'urto}
+	\vspace{0.1\textwidth}
+	\captionof{table}{Tabella dei tempi da noi misurati: indichiamo con $t^*$ l'istante dell'urto che abbiamo considerato essere il valore medio fra il picco massimo e il picco successivo come istante di tempo in cui è avvenuto il rimbalzo e gli abbiamo assegnato un'incertezza pari a $\sigma_t^*$ pari alla semidispersione fra i due a causa del fatto che non è possibile determinare a priori l'istante preciso in cui è avvenuto l'urto}
 \end{minipage}
-\hspace{-0.1\textwidth}
 \section{Analisi dei dati}
 
-Per questa analisi abbiamo utilizzato il metodo del parametro libero del fit rispetto al valore $h_0$. Abbiamo realizzato con il linguaggio di programmazione Python e la funzione \emph{curve\_fit} della libreria \emph{scipy} un grafico delle altezze $h_n$ in funzione dell'indice $n$ che rappresenta l'$n$-esimo rimbalzo della pallina. \\
+Per questa analisi abbiamo utilizzato il metodo del parametro libero del fit rispetto al valore $h_0$ e il parametro $\gamma$. Abbiamo realizzato con il linguaggio di programmazione Python e la funzione \emph{curve\_fit} della libreria \emph{scipy} un grafico delle altezze $h_n$ in funzione dell'indice $n$ che rappresenta l'$n$-esimo rimbalzo della pallina. \\
 Siccome il modello teorico che avevamo ipotizzato era della forma:
 $$
 	h_n = h_0 \gamma^n
@@ -115,30 +92,29 @@ $$
 
 \begin{wrapfigure}{l}{0.5\textwidth}
 	\centering
-	\includegraphics[scale=0.5]{Grafico_n-h(t).pdf} 
-	\includegraphics[scale=0.5]{Grafico_residui.pdf}
+	\includegraphics[scale=0.4]{Grafico_n-h(t).pdf} 
+	\includegraphics[scale=0.4]{Grafico_residui.pdf}
 	\caption{Fit effettuato con la libreria \texttt{scipy} e grafico dei residui: sebbene il fit, ad occhio, risulti buono, si nota subito dal grafico dei residui che sono presenti sicuramente degli errori sistematici, forse dovuti al fatto che man mano che si procede con la misure gli urti diventino sempre più lunghi in senso temporale}
-	\vspace{0.5cm}
+	\vspace{1cm}
 \end{wrapfigure}
 
-Riportiamo il fit fatto con Scipy qua di lato in scala semilogaritmica, da cui si nota (anche se non è molto visibile nell'immagine di lato), che le nostre misure non si discostano molto dal modello teorico e che il nostro modello teorico sembra effettivamente accurato. Tuttavia, la libreria \texttt{scipy} ci restituisce, tramite l'analisi per parametro libero, un altezza iniziale che denotiamo come $\hat{h_0}$ pari a:
+\noindent Riportiamo il fit fatto con Scipy qua di lato in scala semilogaritmica, da cui si nota (anche se non è molto visibile nell'immagine di lato), che le nostre misure non si discostano molto dal modello teorico e che il nostro modello teorico sembra effettivamente accurato. Tuttavia, la libreria \texttt{scipy} ci restituisce, tramite l'analisi per parametro libero, un altezza iniziale che denotiamo come $\hat{h_0}$ pari a:
 \begin{equation}
-	\hat{h_0} = (1.43 \pm 0.02) \, \text{\unit{m}}
+	\hat{h_0} = (2.17 \pm 0.03) \, \text{\unit{m}}
 \end{equation}
-che si discosta di parecchio rispetto al valore da noi aspettato, pari a $h_0 = (2.50 \pm 0.01) \, \text{\unit{m}}$. Il $\chi^2$ tuttavia risulta essere pari a
+che si discosta di parecchio rispetto al valore da noi aspettato, pari a $h_0 = (2.50 \pm 0.01) \, \text{\unit{m}}$ (si parla infatti di $\approx 10.4\sigma$ di distanza). Il $\chi^2$ tuttavia risulta essere pari a
 \begin{equation}
 	\chi^2 \approx 69.9
 \end{equation}
-il che, nel nostro caso in cui abbiamo circa 7 gradi di libertà (9 dati sperimentali - 2 parametri da stimiamo dal fit), lascerebbe pensare che ci troviamo dinanzi ad un buon fit, sebbene i residui lascino ipotizzare, come abbiamo già detto, la presenza di evidenti errori sistematici. \\
-Se guardiamo però il grafico dei residui si nota che i residui non oscillano attorno allo zero, visto che molti residui permangono con il segno negativo piuttosto che distribuirsi anche con segno positivo: questo indica che molto probabilmente erano presenti degli errori di natura non puramente statistica che hanno influito nelle nostre misure, pertanto il test del $\chi^2$ ci può dire ben poco siccome ha senso esclusivamente per grandezze che sono statisticamente indipendenti (e in presenza di errori sistematici ciò non è così). Si può ipotizzare che l'origine di questi errori è stata probabilmente causata dal fatto che la pallina, perdendo sempre di più energia cinetica, effettua degli urti che sono temporalmente più lunghi e noi, considerando solamente la distanza fra due picchi come tempo dell'urto, abbiamo sottostimato l'istante in cui il rimbalzo è avvenuto.
-Abbiamo ipotizzato inoltre che, oltre a quanto già espresso riguardo al fatto che man mano che la pallina effettuava degli urti via via sempre più lunghi che ci hanno fatto sottostimare l'istante effettivo del rimbalzo, l'altezza $h_0$ che avevamo preso in considerazione fosse troppo \emph{grande} e la caduta della pallina, in virtù dell'altezza, risentisse troppo della resistenza dell'aria. \\
-Abbiamo rifatto quindi le misurazione facendola ricadere da circa $h_1 = (1.50 \pm 0.01) \, \text{\unit{m}}$ di cui riportiamo le misure qua sotto: 
+il che, nel nostro caso in cui abbiamo 7 gradi di libertà (9 dati sperimentali - 2 parametri da stimiamo dal fit), lascerebbe pensare che ci troviamo dinanzi ad un buon fit, sebbene i residui lascino ipotizzare la presenza di evidenti errori sistematici: infatti, se guardiamo il grafico dei residui, si nota che i residui non oscillano attorno allo zero, visto che alcuni di essi permangono con il segno negativo piuttosto che distribuirsi anche con segno positivo: questo indica che molto probabilmente erano presenti degli errori di natura non puramente statistica che hanno influito nelle nostre misure, pertanto il test del $\chi^2$ ci può dire ben poco visto che questo ha senso per grandezze che sono statisticamente indipendenti (e in presenza di errori sistematici ciò non è così). Si può ipotizzare che l'origine di questi errori sia probabilmente dovuta al fatto che la pallina, perdendo sempre di più energia cinetica, effettua degli urti che sono temporalmente più lunghi\footnote{infatti, si può osservare dal file audio che la pressione sonora generata dalla pallina ad ogni urto sia sempre più piccola, pertanto agiscono delle forze di modulo sempre più piccolo e che devono agire sulla pallina su tempi più lunghi per permetterle di rimbalzare} e noi, considerando solamente la distanza fra due picchi come tempo dell'urto, abbiamo sottostimato l'istante in cui il rimbalzo è avvenuto. \\ \\
+Abbiamo ipotizzato, inoltre, che, oltre a quanto già espresso riguardo al fatto che man mano che la pallina effettuava degli urti via via sempre più lunghi che ci hanno fatto sottostimare l'istante effettivo del rimbalzo, l'altezza $h_0$ che avevamo preso in considerazione fosse troppo \emph{grande} e la caduta della pallina, in virtù dell'altezza, risentisse troppo della resistenza dell'aria. \\ \\
+Abbiamo rifatto quindi le misurazione facendola ricadere da $h_1 = (1.50 \pm 0.01) \, \text{\unit{m}}$ di cui riportiamo le misure qua nella pagina successiva: 
 
 \begin{wraptable}{r}{0.5\textwidth}
 	\centering
 	\begin{tabular}{c c}
 		\toprule
-		$\Delta t$ ($s$) & $\sigma_{\Delta t}$ ($s$) \\ \midrule
+		$t^*$ ($s$) & $\sigma_{t^*}$ ($s$) \\ \midrule
 		$0.5484$ & $0.0005$ \\ \midrule
 		$1.1012$ & $0.0005$ \\ \midrule
 		$1.5470$ & $0.0005$ \\ \midrule
@@ -148,15 +124,15 @@ Abbiamo rifatto quindi le misurazione facendola ricadere da circa $h_1 = (1.50 \
 	\caption{Misurazione dei rimbalzi della pallina effettuati da un'altezza minore, dove $t^*$ rimane il valore medio fra il picco massimo e il picco successivo di ogni urto e $\sigma_t^*$ la semidifferenza fra i due picchi. Uno dei problemi più grandi di queste misurazioni sono il basso numero di dati che siamo riusciti ad ottenere}
 \end{wraptable}
 
-Come si può vedere un grande problema di queste misure è il fatto che siamo stati in grado di misurare solamente 5 campioni. La libreria \texttt{scipy} anche in questo caso ha restituito un $\hat{h_1}$ totalmente diverso da quello aspettato:
+\noindent Come si può vedere un grande problema di queste misure è il fatto che siamo stati in grado di misurare solamente 5 campioni. La libreria \texttt{scipy} anche in questo caso ha restituito un $\hat{h_1}$ totalmente diverso da quello aspettato:
 \begin{equation}
-	\hat{h_1} = (0.374 \pm 0.001) \unit{m}
+	\hat{h_1} = (0.574 \pm 0.004) \unit{m}
 \end{equation}
-Guardando il grafico (riportato qua sotto), potremmo pensare, come prima, che i dati siano in buon accordo con il modello teorico, tuttavia, a differenza di quanto fatto prima, non possiamo dire molto  sul grafico dei residui a causa del numero esiguo di misure che siamo stati in grado di fare e anche il test del $\chi^2$ ci fa sperare ben poco riguardo alla \emph{qualità} del fit, visto che il suo valore risulta essere pari a:
+Guardando il grafico (riportato qua sotto), potremmo pensare, come prima, che i dati siano in buon accordo con il modello teorico, tuttavia, a differenza di quanto fatto prima, non possiamo dire molto  sul grafico dei residui a causa del numero esiguo di misure che siamo stati in grado di fare e anche il test del $\chi^2$ ci fa sperare ben poco riguardo alla \emph{qualità} del fit, visto che il suo valore risulta essere pari a: \\
 \begin{equation}
-	\chi^2 \approx 3.5
+	\chi^2 \approx 3.6
 \end{equation}
-che, in questo caso in cui abbiamo 2 gradi di libertà e basta, non è un buon valore.
+che, in questo caso in cui abbiamo 2 gradi di libertà, non è un buon valore.
 \\
 \begin{figure}[h!]
 	\centering
@@ -172,10 +148,10 @@ che distano in barre di errore:
 $$
 	\sigma = \left| \frac{\gamma_0 - \gamma_1}{\sqrt{\sigma^2_{\gamma_0} + \sigma^2_{\gamma_1}}} \right| \approx 0.6
 $$
-I due valori di gamma risultano quindi compatibili entro le barre di errore e potremmo quindi supporre che gli effetti che il nostro modello teorico trascura, come la resistenza dell'aria, agiscano come se fossero un \emph{offset} costante, influenzando il moto della pallina come se fosse partita da un'altezza più bassa, tuttavia sono necessari degli esperimenti con una strumentazione con sensibilità maggiore per stimare meglio l'istante in cui l'urto è avvenuto.
+I due valori di gamma risultano quindi compatibili entro le barre di errore e potremmo quindi supporre che gli effetti che il nostro modello teorico trascura, come la resistenza dell'aria, potrebbero agire sul nostro modello come se fossero un \emph{offset} costante influenzando il moto della pallina come se fosse partita da un'altezza più bassa, tuttavia sono necessari degli esperimenti che non soffrono di errori sistematici come in questo caso.
 
 \section{Conclusioni}
 
-L'esperimento da noi compiuto, a causa degli errori di natura non puramente statistici e ai metodi da noi usati (come il test del parametro libero tramite fit lineare, che funziona solo per grandezze statisticamente indipendenti), non ci ha consentito di verificare se ci sono dei motivi per supporre il rigetto del modello teorico da noi supposto. \\
-Bisogna tuttavia osservare che il parametro $\gamma$ misurato in due altezze differenti risulta essere compatibile entro le barre di errore e, pertanto, si potrebbe pensare di ideare altri esperimenti con strumentazione migliore per verificare se, con modelli teorici che tengono conto anche della resistenza dell'aria (che dalla estrapolazioni da noi effettuate si può supporre agire come un offset costante), l'ipotesi che la pallina perda sempre una frazione $\gamma$ della sua energia cinetica sia corretta. 
+L'esperimento da noi compiuto, a causa degli errori non puramente statistici e ai metodi da noi usati (come il test del parametro libero tramite fit lineare, che funziona solo per grandezze statisticamente indipendenti), non ci ha consentito di verificare se ci sono dei motivi per supporre il rigetto del modello teorico da noi supposto. \\
+Bisogna però osservare che il parametro $\gamma$ misurato in due altezze differenti risulta essere compatibile entro le barre di errore tuttavia, essendo ottenuto tramite analisi per parametro libero in presenza di errori sistematici, si potrebbe pensare di ideare altri esperimenti dove questi sono assenti o trascurabili per verificare se, con modelli teorici che tengono conto anche della resistenza dell'aria (che dalla estrapolazioni da noi effettuate pare agire come una sorta di offset costante), l'ipotesi che la pallina perda sempre una frazione $\gamma$ della sua energia cinetica sia corretta. 
 \end{document}

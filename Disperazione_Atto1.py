@@ -29,7 +29,7 @@ print(sigma_t)
 for x in range(len(t_star)-1):
     h.append((1./8.) * g * (t_star[x] - t_star[x+1])**2)
     sigma_h.append((1./4.) * g * np.sqrt(sigma_t[x]**2 + sigma_t[x+1]**2) * (t_star[x] - t_star[x+1]))
-    n.append(x)
+    n.append(x+1)
 print(h)
 print(sigma_h)
 def expo(n, h0, gamma):
@@ -57,6 +57,6 @@ plt.savefig("Grafico_residui_(1).pdf")
 plt.show()
 chi_quadro = 0
 for x in range(len(h)):
-    chi_quadro = chi_quadro + ((h[x] - expo(x, h0_hat, gamma_hat))/sigma_h[x])**2
+    chi_quadro = chi_quadro + ((h[x] - expo(x+1, h0_hat, gamma_hat))/sigma_h[x])**2
 print(f"Il chi_quadro è {chi_quadro}")
 print(f"Il chi_quadro normalizzato vale {chi_quadro/len(t_star)}")
