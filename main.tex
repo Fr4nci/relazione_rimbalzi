@@ -23,7 +23,7 @@ dove $n$ rappresenta il numero di rimbalzi. In questo modello è facilmente dimo
 \section{Strumenti e materiali}
 Per effettuare questa esperienza abbiamo utilizzato i seguenti materiali:
 \begin{itemize}
-	\item una pallina da tennis, abbastanza elastica;
+	\item una pallina da tennis elastica;
 	\item un metro a nastro
 \end{itemize}
 Per quanto riguarda gli strumenti abbiamo invece utilizzato:
@@ -42,7 +42,7 @@ Prima di iniziare l'esperimento, abbiamo effettuato una serie di test per determ
 	\label{fig:audio}
 \end{wrapfigure}
 \noindent Successivamente abbiamo effettuato le misure. Dopo aver raccolto il campione audio, siamo passati ad analizzarlo con la libreria \emph{matplotlib}. Non disponendo di un'applicazione per la registrazione dei suoni in grado di registrare in formato \emph{.wave} abbiamo utilizzato il software \textbf{Audacity} per convertire il file in un formato in grado di essere letto dalla libreria. \\ \\ \clearpage
-\noindent La determinazione degli istanti in cui è avvenuto il rimbalzo è la fase più delicata della raccolta dati di questa esperienza e quello più soggetta agli errori accidentali e sistematici: come si può vedere dalla \ref{fig:audio} qua di lato, infatti, non è possibile individuare in maniera precisa l'\emph{esatto} istante temporale in cui è avvenuto il rimbalzo a causa della natura impulsiva delle forze che hanno agito sulla pallina.
+\noindent La determinazione degli istanti in cui è avvenuto il rimbalzo è la fase più delicata della raccolta dati di questa esperienza e quello più soggetta agli errori accidentali e sistematici: come si può vedere dalla Figura~\ref{fig:audio} qua di lato, infatti, non è possibile individuare in maniera precisa l'\emph{esatto} istante temporale in cui è avvenuto il rimbalzo a causa della natura impulsiva delle forze che hanno agito sulla pallina.
 Siccome ogni rimbalzo è caratterizzato da una serie di \emph{picchi} (fra cui è presente uno che è massimo) e una \emph{coda} abbiamo considerato come istante del rimbalzo il valore medio dell'intervallo di tempo che va dall'istante in cui la pressione sonora è massima (ovvero quando le forze impulsive sono massime) all'istante di tempo  in cui è presente un nuovo picco e come incertezza la semidispersione fra i due. \\ \\
 Per fare ciò abbiamo utilizzato lo strumento \emph{Lente} presente sui grafici del file audio creati con la libreria \texttt{matplotlib}: si ingrandiva la coda dell'urto fino a posizionarci sui due picchi (quello massimo e quello successivo) col mouse e si leggeva la coordinata $x$ (ovvero il tempo) dei due riportata in alto a destra.
 \noindent Successivamente, questi dati sono stati immagazzinati in un array di Python da cui poi abbiamo effettuate tutte le estrapolazioni descritte sopra. Si riporta qua sotto in tabella i dati ottenuti: \\ \\
@@ -106,7 +106,7 @@ che si discosta di parecchio rispetto al valore da noi aspettato, pari a $h_0 = 
 \begin{equation}
 	\chi^2 \approx 69.9
 \end{equation}
-il che, nel nostro caso in cui abbiamo 7 gradi di libertà (9 dati sperimentali - 2 parametri da stimiamo dal fit), lascerebbe pensare che ci troviamo dinanzi ad un buon fit, sebbene i residui lascino ipotizzare la presenza di evidenti errori sistematici: infatti, se guardiamo il grafico dei residui, si nota che i residui non oscillano attorno allo zero, visto che alcuni di essi permangono con il segno negativo piuttosto che distribuirsi anche con segno positivo: questo indica che molto probabilmente erano presenti degli errori di natura non puramente statistica che hanno influito nelle nostre misure, pertanto il test del $\chi^2$ ci può dire ben poco visto che questo ha senso per grandezze che sono statisticamente indipendenti (e in presenza di errori sistematici ciò non è così). Si può ipotizzare che l'origine di questi errori sia probabilmente dovuta al fatto che la pallina, perdendo sempre di più energia cinetica, effettua degli urti che sono temporalmente più lunghi\footnote{infatti, si può osservare dal file audio che la pressione sonora generata dalla pallina ad ogni urto sia sempre più piccola, pertanto agiscono delle forze di modulo sempre più piccolo e che devono agire sulla pallina su tempi più lunghi per permetterle di rimbalzare} e noi, considerando solamente la distanza fra due picchi come tempo dell'urto, abbiamo sottostimato l'istante in cui il rimbalzo è avvenuto. \\ \\
+il che, nel nostro caso in cui abbiamo 7 gradi di libertà (9 dati sperimentali - 2 parametri da stimiamo dal fit), lascerebbe pensare che ci troviamo dinanzi ad un buon fit, sebbene i residui lascino ipotizzare la presenza di evidenti errori sistematici: infatti, se ne guardiamo il grafico, si nota che i residui non oscillano attorno allo zero, visto che alcuni di essi permangono con il segno negativo piuttosto che distribuirsi anche con segno positivo: questo indica che molto probabilmente erano presenti degli errori di natura non puramente statistica che hanno influito nelle nostre misure, pertanto il test del $\chi^2$ ci può dire ben poco visto che questo ha senso per grandezze che sono statisticamente indipendenti (e in presenza di errori sistematici ciò non è così). Si può ipotizzare che l'origine di questi errori sia probabilmente dovuta al fatto che la pallina, perdendo sempre di più energia cinetica, effettua degli urti che sono temporalmente più lunghi\footnote{infatti, si può osservare dal file audio che la pressione sonora generata dalla pallina ad ogni urto sia sempre più piccola, pertanto agiscono delle forze di modulo sempre più piccolo e che devono agire sulla pallina su tempi più lunghi per permetterle di rimbalzare} e noi, considerando solamente la distanza fra due picchi come tempo dell'urto, abbiamo sottostimato l'istante in cui il rimbalzo è avvenuto. \\ \\
 Abbiamo ipotizzato, inoltre, che, oltre a quanto già espresso riguardo al fatto che man mano che la pallina effettuava degli urti via via sempre più lunghi che ci hanno fatto sottostimare l'istante effettivo del rimbalzo, l'altezza $h_0$ che avevamo preso in considerazione fosse troppo \emph{grande} e la caduta della pallina, in virtù dell'altezza, risentisse troppo della resistenza dell'aria. \\ \\
 Abbiamo rifatto quindi le misurazione facendola ricadere da $h_1 = (1.50 \pm 0.01) \, \text{\unit{m}}$ di cui riportiamo le misure qua nella pagina successiva: 
 
@@ -124,7 +124,7 @@ Abbiamo rifatto quindi le misurazione facendola ricadere da $h_1 = (1.50 \pm 0.0
 	\caption{Misurazione dei rimbalzi della pallina effettuati da un'altezza minore, dove $t^*$ rimane il valore medio fra il picco massimo e il picco successivo di ogni urto e $\sigma_t^*$ la semidifferenza fra i due picchi. Uno dei problemi più grandi di queste misurazioni sono il basso numero di dati che siamo riusciti ad ottenere}
 \end{wraptable}
 
-\noindent Come si può vedere un grande problema di queste misure è il fatto che siamo stati in grado di misurare solamente 5 campioni. La libreria \texttt{scipy} anche in questo caso ha restituito un $\hat{h_1}$ totalmente diverso da quello aspettato:
+\noindent Come si può vedere un grande problema di queste misure è il fatto che siamo stati in grado di misurare solamente 4 campioni. La libreria \texttt{scipy} anche in questo caso ha restituito un $\hat{h_1}$ totalmente diverso da quello aspettato:
 \begin{equation}
 	\hat{h_1} = (0.574 \pm 0.004) \unit{m}
 \end{equation}
@@ -138,9 +138,9 @@ che, in questo caso in cui abbiamo 2 gradi di libertà, non è un buon valore.
 	\centering
 	\includegraphics[scale=0.50]{Grafico_n-h(t)_(1).pdf}
 	\includegraphics[scale=0.50]{Grafico_residui_(1).pdf}
-	\captionof{figure}{Fit dei rimbalzi e grafico dei residui della pallina fatta cadere da un'altezza. In questo caso possiamo dire ben poco riguardo alla natura degli errori sistematici a causa del numero esiguo di misura}
+	\captionof{figure}{Fit dei rimbalzi e grafico dei residui della pallina fatta cadere da un'altezza. In questo caso possiamo dire ben poco riguardo alla natura degli errori sistematici a causa del numero esiguo di misure fatte, dovuto al fatto che la pallina faceva dei rimbalzi troppo silenziosi non facilmente analizzabili con la strumentazione dai noi posseduta}
 \end{figure}
-Un fatto tuttavia interessante è che, in entrambe le misurazioni, se estrapoliamo attraverso il metodo del parametro libero il parametro $\gamma$, si osserva che in entrambe le misurazioni effettuate rispettivamente a $h_0$ e $h_1$ il valore ottenuto è compatibile in barre di errore. Si ha infatti che:
+\noindent Un fatto tuttavia interessante è che, in entrambe le misurazioni, se estrapoliamo attraverso il metodo del parametro libero il parametro $\gamma$, si osserva che in entrambe le misurazioni effettuate rispettivamente a $h_0$ e $h_1$ il valore ottenuto è compatibile in barre di errore. Si ha infatti che:
 \begin{align*}
 	&\gamma_0 = (0.656 \pm 0.002) \, \unit{\frac{J}{m}} & &\gamma_1 = (0.652 \pm 0.003) \, \unit{\frac{J}{m}}
 \end{align*}

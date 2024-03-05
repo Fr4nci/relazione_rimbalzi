@@ -13,9 +13,9 @@ plt.xlabel("Tempo [s]")
 plt.savefig("Grafico_rimbalzo.pdf")
 plt.show()
 g = 9.81
-t_1 = [0.25374149, 1.3378907, 2.1928567, 2.879543, 3.43581, 3.888680, 4.25915, 4.56335, 4.81170, 5.01293]
-t_2 = [0.254240358, 1.34247168, 2.197514,  2.888841,  3.44512, 3.898321, 4.259859, 4.5642629, 4.820339, 5.02143]
-n = []
+t_1 = [0.25374149, 1.3378907, 2.1928567, 2.879543, 3.43581, 3.888680, 4.25915, 4.56335, 4.81170, 5.01293]               # per rendere più semplice la trattazione abbiamo deciso di riportare i dati in due array
+t_2 = [0.254240358, 1.34247168, 2.197514,  2.888841,  3.44512, 3.898321, 4.259859, 4.5642629, 4.820339, 5.02143]        # differenti per poi iterare (siccome hanno la stessa dimensione con zip). Sicuramente non sarà
+n = []                                                                                                                  # il metodo più efficiente ma il più funzionale per non impazzire sulle dimensioni degli array
 frequency = 1/(44.1 * 10**3)
 t_star = []
 h = []
@@ -57,5 +57,5 @@ plt.savefig("Grafico_residui.pdf")
 plt.show()
 chi_quadro = 0
 for x in range(len(h)):
-    chi_quadro = chi_quadro + ((h[x] - expo(x+1, h0_hat, gamma_hat))/sigma_h[x])**2
+    chi_quadro = chi_quadro + ((h[x] - expo(x+1, h0_hat, gamma_hat))/sigma_h[x])**2         # funzione usata per calcolare il chi_quadro
 print(f"Il chi_quadro normalizzato vale {chi_quadro/len(t_star)}")
