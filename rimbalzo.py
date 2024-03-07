@@ -41,7 +41,7 @@ h0_hat, gamma_hat = popt
 sigma_h0, sigma_gamma = np.sqrt(pconv.diagonal())
 print(f"h0: {h0_hat} \pm {sigma_h0}")
 print(f"gamma: {gamma_hat} \pm {sigma_gamma}")
-x = np.linspace(0.0, n[len(n)-1], 100) # n_rimbalzi da sostituire con il numero effettivo
+x = np.linspace(0.0, n[len(n)-1], 100)
 plt.plot(x, expo(x, h0_hat, gamma_hat))
 plt.yscale("log")
 plt.grid(which='both', ls='dashed', color='gray')
